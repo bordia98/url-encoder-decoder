@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>URL Encoder & Decoder - Free Online Tool | Instant Percent-Encoding</title>
+  <meta name="title" content="URL Encoder & Decoder - Free Online Tool | Instant Percent-Encoding">
+  <meta name="description" content="Fast, free, and secure online URL encoder and decoder. Convert URLs, query strings, and URI components in real-time. 100% client-side with zero data tracking.">
+  <meta name="keywords" content="url encoder, url decoder, percent encoding, uri encoder, encodeuricomponent, query string parser, base64 url safe, url converter online, developer tools">
+  <meta name="author" content="bordia98">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bordia98.github.io/url-encoder-decoder/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bordia98.github.io/url-encoder-decoder/">
+  <meta property="og:title" content="URL Encoder & Decoder - Free Online Developer Tool">
+  <meta property="og:description" content="Encode and decode URLs, URI components, and query parameters instantly in your browser. 100% private and client-side.">
+  <meta property="og:site_name" content="Web Developer Tools by bordia98">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://bordia98.github.io/url-encoder-decoder/">
+  <meta property="twitter:title" content="URL Encoder & Decoder - Free Online Developer Tool">
+  <meta property="twitter:description" content="Encode and decode URLs, URI components, and query parameters instantly in your browser. 100% private and client-side.">
+
+  <!-- Favicon SVG Data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "URL Encoder and Decoder",
+    "url": "https://bordia98.github.io/url-encoder-decoder/",
+    "description": "Fast, free, and secure online URL encoder and decoder. Convert URLs, query strings, and URI components in real-time with zero data collection.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "creator": {
+      "@type": "Person",
+      "name": "bordia98",
+      "url": "https://github.com/bordia98"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is URL Encoding (Percent-Encoding)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "URL encoding converts reserved, unsafe, or non-ASCII characters in a URL into a valid ASCII format using the '%' character followed by two hexadecimal digits (RFC 3986)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between encodeURI and encodeURIComponent?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "encodeURI preserves URL structure characters like ':', '/', '?', and '#' because it is meant for an entire URL. encodeURIComponent encodes these characters too, making it suitable for query string parameter values."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data stored or sent to a server?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. This tool operates 100% client-side in your web browser. No text, URLs, or parameters are ever sent to any remote server or stored in any database."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand">
+        <span class="brand-icon">🔗</span>
+        <div>
+          <span class="brand-title">URL Encoder & Decoder</span>
+          <span class="brand-badge">100% Client-Side</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="themeToggle" class="btn-icon" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <span class="theme-icon light-icon">☀️</span>
+          <span class="theme-icon dark-icon">🌙</span>
+        </button>
+        <a href="https://github.com/bordia98/url-encoder-decoder" target="_blank" rel="noopener noreferrer" class="btn-github" title="View Source on GitHub">
+          <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="hero-section">
+      <h1>Online URL Encoder & Decoder</h1>
+      <p class="hero-subtitle">Encode and decode standard URLs, URI components, query parameters, and Base64 strings in real-time. Fast, secure, and privacy-friendly.</p>
+    </div>
+
+    <!-- Mode Selector Tabs -->
+    <div class="tabs-container" role="tablist">
+      <button class="tab-btn active" data-tab="converter" role="tab" aria-selected="true" aria-controls="tab-converter">
+        <span class="tab-icon">⚡</span> Quick Convert
+      </button>
+      <button class="tab-btn" data-tab="params" role="tab" aria-selected="false" aria-controls="tab-params">
+        <span class="tab-icon">🧩</span> Query Param Editor
+      </button>
+      <button class="tab-btn" data-tab="base64" role="tab" aria-selected="false" aria-controls="tab-base64">
+        <span class="tab-icon">🔐</span> Base64 URL Safe
+      </button>
+    </div>
+
+    <!-- Tab 1: Converter -->
+    <div id="tab-converter" class="tab-panel active" role="tabpanel">
+      <!-- Options Bar -->
+      <div class="toolbar">
+        <div class="options-group">
+          <label class="radio-label" title="Encodes everything except standard unreserved characters (RFC 3986 standard for query strings)">
+            <input type="radio" name="encodeMode" value="component" checked>
+            <span>Component Mode (<code>encodeURIComponent</code>)</span>
+          </label>
+          <label class="radio-label" title="Preserves full URL structure like http://, ?, &, #">
+            <input type="radio" name="encodeMode" value="full">
+            <span>Full URL Mode (<code>encodeURI</code>)</span>
+          </label>
+        </div>
+
+        <div class="options-group">
+          <label class="checkbox-label" title="Toggle automatic real-time conversion as you type">
+            <input type="checkbox" id="liveMode" checked>
+            <span>Live Mode</span>
+          </label>
+          <label class="checkbox-label" title="Replace spaces with + instead of %20 (application/x-www-form-urlencoded)">
+            <input type="checkbox" id="spacePlus">
+            <span>Space as <code>+</code></span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Two Column Layout for Input / Output -->
+      <div class="converter-grid">
+        <!-- Input Card -->
+        <div class="card">
+          <div class="card-header">
+            <label for="inputText" class="card-title">Input Text / URL</label>
+            <div class="card-tools">
+              <span id="inputStats" class="stat-pill">0 chars | 0 bytes</span>
+              <button id="clearInputBtn" class="btn-ghost" title="Clear input">Clear</button>
+              <button id="sampleInputBtn" class="btn-ghost" title="Load sample URL">Sample</button>
+            </div>
+          </div>
+          <div class="textarea-wrapper">
+            <textarea id="inputText" placeholder="Paste or type text, URL, or percent-encoded string here..." rows="8" spellcheck="false"></textarea>
+          </div>
+          <div class="card-actions">
+            <button id="encodeBtn" class="btn btn-primary">
+              <span>Encode &rarr;</span>
+            </button>
+            <button id="decodeBtn" class="btn btn-secondary">
+              <span>&larr; Decode</span>
+            </button>
+            <button id="swapBtn" class="btn btn-outline" title="Swap input and output values">
+              <span>⇅ Swap</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Output Card -->
+        <div class="card">
+          <div class="card-header">
+            <label for="outputText" class="card-title">Result Output</label>
+            <div class="card-tools">
+              <span id="outputStats" class="stat-pill">0 chars | 0 bytes</span>
+              <button id="copyOutputBtn" class="btn-copy" title="Copy result to clipboard">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copy</span>
+              </button>
+            </div>
+          </div>
+          <div class="textarea-wrapper">
+            <textarea id="outputText" placeholder="Encoded or decoded result will appear here..." rows="8" readonly spellcheck="false"></textarea>
+          </div>
+          <div class="card-footer">
+            <div id="statusMessage" class="status-msg">Ready</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Query Parameter Editor -->
+    <div id="tab-params" class="tab-panel" role="tabpanel">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">URL & Query String Breakdown</div>
+          <button id="loadParamSampleBtn" class="btn-ghost">Load Sample URL</button>
+        </div>
+        <div class="form-group">
+          <label for="paramFullUrl">Full URL to Parse & Edit</label>
+          <input type="text" id="paramFullUrl" class="text-input" placeholder="https://example.com/search?query=hello+world&lang=en&category=tech&page=1">
+        </div>
+
+        <div class="url-components-grid">
+          <div class="comp-box">
+            <span class="comp-label">Protocol</span>
+            <span id="compProtocol" class="comp-val">-</span>
+          </div>
+          <div class="comp-box">
+            <span class="comp-label">Host / Domain</span>
+            <span id="compHost" class="comp-val">-</span>
+          </div>
+          <div class="comp-box">
+            <span class="comp-label">Pathname</span>
+            <span id="compPath" class="comp-val">-</span>
+          </div>
+          <div class="comp-box">
+            <span class="comp-label">Hash / Anchor</span>
+            <span id="compHash" class="comp-val">-</span>
+          </div>
+        </div>
+
+        <div class="params-table-header">
+          <span class="table-title">Query Parameters (<span id="paramCount">0</span>)</span>
+          <button id="addParamRowBtn" class="btn btn-sm btn-outline">+ Add Parameter</button>
+        </div>
+
+        <div class="table-responsive">
+          <table class="params-table">
+            <thead>
+              <tr>
+                <th style="width: 35%;">Key</th>
+                <th style="width: 50%;">Value</th>
+                <th style="width: 15%; text-align: center;">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="paramsTableBody">
+              <tr>
+                <td colspan="3" class="empty-state">No query parameters found. Enter a URL above or add a parameter.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="assembled-url-box">
+          <label for="assembledUrl">Reconstructed & Encoded URL</label>
+          <div class="input-with-button">
+            <input type="text" id="assembledUrl" class="text-input" readonly>
+            <button id="copyAssembledBtn" class="btn btn-primary btn-sm">Copy URL</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Base64 URL Safe -->
+    <div id="tab-base64" class="tab-panel" role="tabpanel">
+      <div class="converter-grid">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Base64 Text / String</span>
+            <button id="b64ClearBtn" class="btn-ghost">Clear</button>
+          </div>
+          <textarea id="b64Input" placeholder="Enter plain text to encode into URL-safe Base64..." rows="8"></textarea>
+          <div class="card-actions">
+            <button id="b64EncodeBtn" class="btn btn-primary">Base64 URL-Safe Encode &rarr;</button>
+            <button id="b64DecodeBtn" class="btn btn-secondary">&larr; Base64 URL-Safe Decode</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Base64 URL-Safe Result</span>
+            <button id="b64CopyBtn" class="btn-copy">Copy</button>
+          </div>
+          <textarea id="b64Output" placeholder="Resulting base64url string..." rows="8" readonly></textarea>
+          <div class="card-footer">
+            <span class="note-text">URL-safe Base64 substitutes <code>+</code> with <code>-</code>, <code>/</code> with <code>_</code>, and removes trailing <code>=</code> padding.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Educational & SEO Content Section -->
+    <section class="seo-content-section">
+      <article>
+        <h2>Understanding URL Encoding & Percent-Encoding (RFC 3986)</h2>
+        <p>
+          Uniform Resource Identifiers (URIs) and URLs can only be sent over the Internet using the standard <strong>ASCII character-set</strong>. 
+          When URLs contain characters outside of ASCII (such as non-English alphabets, emojis, or spaces) or reserved characters (such as <code>?</code>, <code>&</code>, <code>=</code>, <code>#</code>, and <code>/</code>) 
+          within query parameter values, they must be converted into a valid URI format. This process is called <strong>percent-encoding</strong> or <strong>URL encoding</strong>.
+        </p>
+
+        <h3>How Percent-Encoding Works</h3>
+        <p>
+          In percent-encoding, any reserved or non-ASCII character is replaced by a percent sign (<code>%</code>) followed by the two-digit hexadecimal representation of its byte in UTF-8. 
+          For example:
+        </p>
+        <ul>
+          <li>A standard space character (ASCII 32) is encoded as <code>%20</code>.</li>
+          <li>The ampersand character <code>&</code> (ASCII 38) is encoded as <code>%26</code>.</li>
+          <li>The equals sign <code>=</code> (ASCII 61) is encoded as <code>%3D</code>.</li>
+          <li>The question mark <code>?</code> (ASCII 63) is encoded as <code>%3F</code>.</li>
+        </ul>
+
+        <h3>Common Percent-Encoding Characters Reference</h3>
+        <div class="table-responsive">
+          <table class="reference-table">
+            <thead>
+              <tr>
+                <th>Character</th>
+                <th>Description</th>
+                <th>Percent-Encoded</th>
+                <th>Safe to Leave Unencoded?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>[Space]</code></td>
+                <td>Space character</td>
+                <td><code>%20</code> or <code>+</code></td>
+                <td>No (Always encode)</td>
+              </tr>
+              <tr>
+                <td><code>&</code></td>
+                <td>Ampersand (Query param separator)</td>
+                <td><code>%26</code></td>
+                <td>Only as parameter separator</td>
+              </tr>
+              <tr>
+                <td><code>=</code></td>
+                <td>Equals (Key-value delimiter)</td>
+                <td><code>%3D</code></td>
+                <td>Only as key/value delimiter</td>
+              </tr>
+              <tr>
+                <td><code>?</code></td>
+                <td>Question mark (Query string starter)</td>
+                <td><code>%3F</code></td>
+                <td>Only at start of query string</td>
+              </tr>
+              <tr>
+                <td><code>/</code></td>
+                <td>Forward slash (Path separator)</td>
+                <td><code>%2F</code></td>
+                <td>Only in URL path, encode in params</td>
+              </tr>
+              <tr>
+                <td><code>#</code></td>
+                <td>Hash / Fragment identifier</td>
+                <td><code>%23</code></td>
+                <td>Only to mark URL anchor</td>
+              </tr>
+              <tr>
+                <td><code>@</code></td>
+                <td>At symbol</td>
+                <td><code>%40</code></td>
+                <td>Encode in query strings</td>
+              </tr>
+              <tr>
+                <td><code>%</code></td>
+                <td>Percent sign</td>
+                <td><code>%25</code></td>
+                <td>Always encode (unless escape prefix)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Difference: <code>encodeURI</code> vs <code>encodeURIComponent</code></h3>
+        <p>
+          JavaScript provides two primary built-in functions for URL encoding:
+        </p>
+        <ul>
+          <li>
+            <strong><code>encodeURI(url)</code></strong>: Designed for encoding a complete URL. It preserves protocol delimiters (<code>://</code>), path separators (<code>/</code>), and query syntax (<code>?</code>, <code>&</code>, <code>=</code>, <code>#</code>). 
+            Do <em>not</em> use this when passing user input as a query parameter value, because reserved characters like <code>&</code> will not be escaped and could corrupt the query structure.
+          </li>
+          <li>
+            <strong><code>encodeURIComponent(str)</code></strong>: Designed to encode individual components such as query parameter keys and values. It encodes all characters except letters, digits, and <code>-</code>, <code>_</code>, <code>.</code>, <code>!</code>, <code>~</code>, <code>*</code>, <code>'</code>, <code>(</code>, <code>)</code>.
+          </li>
+        </ul>
+
+        <h3>Frequently Asked Questions (FAQ)</h3>
+        <div class="faq-container">
+          <details class="faq-item">
+            <summary class="faq-question">Why does space encode to <code>%20</code> in some places and <code>+</code> in others?</summary>
+            <div class="faq-answer">
+              <p>RFC 3986 specifies <code>%20</code> as the strict percent-encoded representation of a space character in URIs. However, HTML form submissions (using the MIME type <code>application/x-www-form-urlencoded</code>) traditionally encode spaces as a plus sign (<code>+</code>). Both are commonly supported by backend web servers, but <code>%20</code> is universally valid everywhere in URLs.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Is my information safe when using this tool?</summary>
+            <div class="faq-answer">
+              <p>Yes, absolutely. This entire application runs 100% locally inside your browser via JavaScript. No input data, query parameters, API keys, or URLs are ever transmitted to any remote server or stored in cookies. You can verify this by inspecting the open source code or running it offline.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Can I decode double-encoded URLs?</summary>
+            <div class="faq-answer">
+              <p>Yes. If a URL has been accidentally double-encoded (e.g. <code>%2520</code> instead of <code>%20</code>), simply click the "Decode" button once, swap the result to the input box, and click "Decode" a second time.</p>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast" role="alert" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 <a href="https://github.com/bordia98" target="_blank" rel="noopener noreferrer">bordia98</a>. Built with privacy in mind &mdash; Free & Open Source under MIT License.</p>
+      <div class="footer-links">
+        <a href="https://github.com/bordia98/url-encoder-decoder" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        <span>&bull;</span>
+        <a href="https://github.com/bordia98/timestamp-converter" target="_blank" rel="noopener noreferrer">Timestamp Converter</a>
+        <span>&bull;</span>
+        <a href="https://github.com/bordia98/uuid-hash-generator" target="_blank" rel="noopener noreferrer">UUID & Hash Generator</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
